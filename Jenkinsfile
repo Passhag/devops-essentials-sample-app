@@ -8,6 +8,9 @@ pipeline {
                 archiveArtifacts artifacts: 'src/index.html'
             }
         }
+
+
+        
         stage('DeployToStage') {
             when {
                 branch 'master'
